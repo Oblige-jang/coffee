@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* header sector */
+header{
+    height: 100vh;
+}
+
+header>h1{
+    color:#e4e5ee;
+}
+/* end header sector */
+
+/* article(main) sector */
+.main article{
+    height: 50vh;
+    flex-direction: row;
+}
+.main article section{
+    height: 100%; 
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+}
+.main article aside{
+    height: 100%; 
+    width: 50vw;
+}
+.main article:first-child section{
+    background-image: url(../resource/img/title.jpg);
+}
+.main article:nth-child(2) section{
+    background-image: url(../resource/img/title2.jpg);
+}
+.main article:nth-child(3) section{
+    background-image: url(../resource/img/title3.jpg);
+}
+.main article:nth-child(4) section{
+    background-image: url(../resource/img/title4.jpg);
+}
+.main article:nth-child(5) section{
+    background-image: url(../resource/img/title5.jpg);
+}
+/* end article sector */
+
+/* fotter sector */
+footer{
+    height: 10vh;
+}
+footer>span{
+    font-size: 10px;
+}
+footer>span{
+    margin-left: 5px;
+}
+footer>address.flex-center{
+    flex-direction: row;
+    align-items: stretch;
+}
+footer address>div{
+    flex: 1;
+    height: 6vh;
+}
+footer address>div>a{
+    width: fit-content;
+    margin:0 auto;
+}
+footer address>div>a>img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+/* end fotter sector */
