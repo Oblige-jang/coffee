@@ -102,7 +102,16 @@
     98%{background:linear-gradient(352.8deg,#e66465,#9198e5);}
     99%{background:linear-gradient(356.4deg,#e66465,#9198e5);}
     100%{background:linear-gradient(360deg,#e66465,#9198e5);}
-    
-    
-    
+}
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+@keyframes horizonZin{
+    from{width: 50vw;}
+    to{width: 100vw;}
+}
+@keyframes horizonZout{
+    from{width: 100vw;}
+    to{width: 50vw;}
 }

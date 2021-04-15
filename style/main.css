@@ -1,12 +1,15 @@
 @charset "utf-8";
 
+body{
+    opacity: 0;
+}
 /* header sector */
 header{
     height: 100vh;
 }
 
 header>h1{
-    color:#e4e5ee;
+    color: #e6e6fa;
 }
 /* end header sector */
 
@@ -20,6 +23,24 @@ header>h1{
     width: 50vw;
     background-size: cover;
     background-position: center;
+}
+.main article section:hover{
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -moz-animation-name: horizonZin;
+    -webkit-animation-name: horizonZin;
+    animation-name: horizonZin;
+    animation-fill-mode: forwards;
+}
+.main article section:not(:hover){
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -moz-animation-name: horizonZout;
+    -webkit-animation-name: horizonZout;
+    animation-name: horizonZout;
+    animation-fill-mode: forwards;
 }
 .main article aside{
     height: 100%; 
